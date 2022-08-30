@@ -1,0 +1,112 @@
+*{
+     margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+#navbar{
+    display: inline-flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 55px;
+    background-color: white;
+    font-size: 25px;
+    box-shadow: 0px 3px 30px #7B7B7B29;             
+}
+
+
+#head1{
+    color: #483838 ;
+    font-family: 'Aboreto', cursive;
+}
+
+
+#head2{
+    color: #42855B;
+    padding-left: 5px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+#main-div{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#btn{
+    font-size: xx-large;
+    height: 50px;
+    width: 50px;
+    border: none;
+    color: white;
+    border-radius:50%;
+    background-color: #42855B;
+    position: absolute;
+    right: 48%;
+    top: 20%;
+}
+
+#btn:hover{
+    box-shadow: 0px 3px 30px #90B77D;
+    transition: 0.7s;
+}
+
+#txt{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    top: 30%;
+    right: 46%;
+    position: absolute;
+    color: #483838;
+}
+
+
+#box-div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15%;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+            
+.box{
+    width: 30%;
+    height: 45%;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-left: 2%;
+    border: 0.5px solid #42855B;
+    padding: 2%;
+}
+
+.box:hover{
+    box-shadow: 0px 3px 20px #D2D79F;
+    transition: 0.7s;
+}
+            
+.box h2{
+    color: #90B77D;
+    padding-bottom: 5%;
+    font-family: 'Aboreto', cursive;
+}
+
+.box h4{
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+@media(max-width: 750px){
+    #box-div{
+        margin-top: 50%;
+    }
+}
