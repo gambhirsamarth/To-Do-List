@@ -1,7 +1,10 @@
+var count=1;
+
 function add(){
     var boxd=document.getElementById("box-div");
     var box=document.createElement("div");   
     box.className="box";
+    box.id=count;
     var heading= String(prompt("ENTER THE HEADING"));
     var items=Number(prompt("ENTER NUMBER OF ITEMS (ONLY NUMBER)"))
     var arr=new Array();
@@ -20,6 +23,7 @@ function add(){
     }
 
     boxd.appendChild(box);
+    count++;
 }
 
 

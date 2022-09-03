@@ -80,12 +80,13 @@ body{
             
 .box{
     width: 30%;
-    height: 45%;
+    height: 25vh;
     border-radius: 5px;
     margin-top: 2%;
     margin-left: 2%;
     border: 0.5px solid #42855B;
     padding: 2%;
+    overflow:auto;
 }
 
 .box:hover{
@@ -108,5 +109,15 @@ body{
 @media(max-width: 750px){
     #box-div{
         margin-top: 50%;
+    }
+
+    #txt{
+        right: 41%;
+    }
+}
+
+@media(max-width: 300px){
+    #box-div{
+        margin-top: 60%;
     }
 }
