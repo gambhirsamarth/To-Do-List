@@ -83,6 +83,8 @@ body{
     height: 25vh;
     border-radius: 5px;
     margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
     margin-left: 2%;
     border: 0.5px solid #42855B;
     padding: 2%;
@@ -113,6 +115,10 @@ body{
 
     #txt{
         right: 41%;
+    }
+
+    .box{
+        width: 100%;
     }
 }
 
