@@ -14,6 +14,7 @@ function add(){
     }
         
     box.innerHTML+=`<h2>${heading}</h2>`;
+    box.innerHTML+=`<btn class="del-btn" onclick="del(${box.id})"><i class="fa-solid fa-trash"></i></btn>`
 
     for(var i=0;i<items;i++){
         box.innerHTML+=`<h4>
@@ -21,7 +22,6 @@ function add(){
         <label for="id${i}" id="label${i}">${arr[i]}</label>    
         </h4>`
     }
-
     boxd.appendChild(box);
     count++;
 }
@@ -40,4 +40,10 @@ function check(idd,labell){
             label.style.textDecorationLine="none";
             label.style.color="black";
         }
+}
+
+function del(b_id)
+{
+    const b=document.getElementById(b_id);
+    b.remove();
 }
