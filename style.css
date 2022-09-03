@@ -83,8 +83,6 @@ body{
     height: 25vh;
     border-radius: 5px;
     margin-top: 2%;
-    margin-bottom: 2%;
-    margin-right: 2%;
     margin-left: 2%;
     border: 0.5px solid #42855B;
     padding: 2%;
@@ -98,8 +96,8 @@ body{
             
 .box h2{
     color: #90B77D;
-    padding-bottom: 5%;
     font-family: 'Aboreto', cursive;
+    width: fit-content;
 }
 
 .box h4{
@@ -107,6 +105,20 @@ body{
     font-weight: lighter;
     font-size: 25px;
 }
+
+.del-btn{
+    color: #483838;
+    position: sticky;
+    margin-left: 90%;
+    top: 0%;
+} 
+
+.del-btn:hover{
+    color: red;
+    transition: 0.7s;
+}
+
+
 
 @media(max-width: 750px){
     #box-div{
@@ -119,6 +131,7 @@ body{
 
     .box{
         width: 100%;
+        margin: 2%;
     }
 }
 
