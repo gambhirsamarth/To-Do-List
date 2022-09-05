@@ -1,4 +1,5 @@
 var count=1;
+var j  =0;
 
 function add(){
     var boxd=document.getElementById("box-div");
@@ -15,12 +16,15 @@ function add(){
         
     box.innerHTML+=`<h2>${heading}</h2>`;
     box.innerHTML+=`<btn class="del-btn" onclick="del(${box.id})"><i class="fa-solid fa-trash"></i></btn>`
+    box.innerHTML+=`<button class="add" onclick="additem(${box.id})">+</button>`
 
     for(var i=0;i<items;i++){
         box.innerHTML+=`<h4>
-        <input type="checkbox" onclick="check(id${i},label${i})" id="id${i}">
-        <label for="id${i}" id="label${i}">${arr[i]}</label>    
+        <input type="checkbox" onclick="check(id${j},label${j})" id="id${j}">
+        <label for="id${j}" id="label${j}">${arr[i]}</label>    
         </h4>`
+
+        j++;
     }
     boxd.appendChild(box);
     count++;
@@ -28,6 +32,8 @@ function add(){
 
 
 function check(idd,labell){
+
+    
         var checkb=idd;
         var label=labell;
         
@@ -46,4 +52,15 @@ function del(b_id)
 {
     const b=document.getElementById(b_id);
     b.remove();
+}
+
+function additem(boxid){
+    box=document.getElementById(boxid);
+    var inp = prompt("ENTER ELEMENT: ");
+    box.innerHTML+=
+    `<h4> 
+    <input type="checkbox" onclick="check(id${j},label${j})" id="id${j}">
+    <label for="id${j}" id="label${j}">${inp}</label>  
+    </h4>`
+     j++;
 }
